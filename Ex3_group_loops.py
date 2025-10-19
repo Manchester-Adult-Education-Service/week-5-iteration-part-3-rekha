@@ -40,7 +40,7 @@ friend3 = input("please enter the name of friend3")
 friends = [friend1, friend2, friend3]
 for name in friends:
     print("Hello " + name)
-    
+
 # -------------------------------------------
 # SWAP COMPUTERS
 # -------------------------------------------
@@ -75,7 +75,15 @@ print("-------------------------------------------\n"
 #     print("Message for other cases")
 
 # Write your code below:
-
+value=0
+while value<1 or value>10:
+    value=int(input("Enter a value "))
+    if (value<1):
+        print("value is too low (<1)")
+    elif (value>10):
+        print("value is too high (>10)")
+    else:
+        print("value is in correct range")
 
 # -------------------------------------------
 # SWAP COMPUTERS
@@ -107,10 +115,22 @@ print("-------------------------------------------\n"
 #     #     print("Try again")
 #     # else:
 #     #     print("Check your answer")
-
 # Write your code below:
-
-
+questions = ["what is 2 + 2?", "Type the colour of the sky.", "First letter of the alphabet?"] 
+for i in range(0,3):
+    answer = input(questions[i]+ " ")
+    if i==0 and answer=="4":
+        print("correct answer")
+    elif i==0 and answer!="4":
+        print("not correct answer")
+    elif i==1 and answer == "blue":
+        print("correct answer")
+    elif i==1 and answer != "blue":
+        print("not correct answer")
+    elif i==2 and answer == "a":
+        print("correct answer")
+    elif i==2 and answer != "a":
+        print("not correct answer")
 # -------------------------------------------
 # EXTENSION ACTIVITIES
 # -------------------------------------------
