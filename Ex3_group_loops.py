@@ -153,6 +153,13 @@ print("-------------------------------------------\n"
 #     answer = input("Try again: ")
 
 # Write your code below:
+answer = input("Enter someething: ")
+while answer == "":
+    answer = input("Answer is empty try again: ")
+
+answer = int(input("Enter a number: "))
+while answer < 7 or answer >10:
+    answer = int(input("Answer is not in range 7 to 10 try again: "))
 
 
 # Extension 2: Multiple Feedback Options
@@ -175,7 +182,15 @@ print("-------------------------------------------\n"
 #     print something here
 
 # Write your code below:
-
+answer = input("Enter either A, B or C")
+while answer != "A" and answer != "B" and answer != "C":
+    answer = input("You answered incorrectly try again: ")
+if (answer == "A"):
+    print("You entered A")
+elif (answer == "B"):
+    print("You entered B")
+else:
+    print("You entered C")
 
 # Extension 3: Repeat Quiz for Another User
 # -------------------------------------------
@@ -210,7 +225,17 @@ print("-------------------------------------------\n"
 #     user_name = input("Enter another user's name (or press Enter to stop): ")
 
 # Write your code below:
-
+questions = ["What is 2 + 2?", "What colour is the sky?", "When were women first allowed to vote in the UK?"]
+answers = ["4", "blue", "1918"]
+name = input("what is your name: ")
+while name != "":
+    for i in range(0,3):
+        ans = input(questions[i])
+        if ans == answers[i]:
+            print(f"Correct {name}")
+        else:
+            print(f"Incorrect {name}")
+    name = input("What is the next players name")
 
 # -------------------------------------------
 # ADVANCED ACTIVITY
