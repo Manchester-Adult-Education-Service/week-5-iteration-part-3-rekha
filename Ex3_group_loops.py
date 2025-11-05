@@ -34,7 +34,12 @@ print("-------------------------------------------\n"
 #     print("Hello " + name)  # loop through and greet
 
 # Write your code below:
-
+friend1 = input("please enter the name of friend1: ")
+friend2 = input("please enter the name of friend2: ")
+friend3 = input("please enter the name of friend3: ")
+friends = [friend1, friend2, friend3]
+for name in friends:
+    print("Hello " + name)
 
 # -------------------------------------------
 # SWAP COMPUTERS
@@ -70,7 +75,15 @@ print("-------------------------------------------\n"
 #     print("Message for other cases")
 
 # Write your code below:
-
+value=0
+while value<1 or value>10:
+    value=int(input("Enter a value: "))
+    if (value<1):
+        print("value is too low (<1)")
+    elif (value>10):
+        print("value is too high (>10)")
+    else:
+        print("value is in correct range")
 
 # -------------------------------------------
 # SWAP COMPUTERS
@@ -102,10 +115,22 @@ print("-------------------------------------------\n"
 #     #     print("Try again")
 #     # else:
 #     #     print("Check your answer")
-
 # Write your code below:
-
-
+questions = ["what is 2 + 2?", "Type the colour of the sky.", "First letter of the alphabet?"] 
+for i in range(0,3):
+    answer = input(questions[i]+ " ")
+    if i==0 and answer=="4":
+        print("correct answer")
+    elif i==0 and answer!="4":
+        print("not correct answer")
+    elif i==1 and answer == "blue":
+        print("correct answer")
+    elif i==1 and answer != "blue":
+        print("not correct answer")
+    elif i==2 and answer == "a":
+        print("correct answer")
+    elif i==2 and answer != "a":
+        print("not correct answer")
 # -------------------------------------------
 # EXTENSION ACTIVITIES
 # -------------------------------------------
@@ -128,6 +153,13 @@ print("-------------------------------------------\n"
 #     answer = input("Try again: ")
 
 # Write your code below:
+answer = input("Enter something: ")
+while answer == "":
+    answer = input("Answer is empty try again: ")
+
+answer = int(input("Enter a number: "))
+while answer < 7 or answer >10:
+    answer = int(input("Answer is not in range 7 to 10 try again: "))
 
 
 # Extension 2: Multiple Feedback Options
@@ -150,7 +182,15 @@ print("-------------------------------------------\n"
 #     print something here
 
 # Write your code below:
-
+answer = input("Enter either A, B or C")
+while answer != "A" and answer != "B" and answer != "C":
+    answer = input("You answered incorrectly try again: ")
+if (answer == "A"):
+    print("You entered A")
+elif (answer == "B"):
+    print("You entered B")
+else:
+    print("You entered C")
 
 # Extension 3: Repeat Quiz for Another User
 # -------------------------------------------
@@ -185,7 +225,17 @@ print("-------------------------------------------\n"
 #     user_name = input("Enter another user's name (or press Enter to stop): ")
 
 # Write your code below:
-
+questions = ["What is 2 + 2?", "What colour is the sky?", "When were women first allowed to vote in the UK?"]
+answers = ["4", "blue", "1918"]
+name = input("what is your name: ")
+while name != "":
+    for i in range(0,3):
+        ans = input(questions[i])
+        if ans == answers[i]:
+            print(f"Correct {name}")
+        else:
+            print(f"Incorrect {name}")
+    name = input("What is the next players name")
 
 # -------------------------------------------
 # ADVANCED ACTIVITY
@@ -201,7 +251,12 @@ print("-------------------------------------------\n"
 # Hint: combine loops and decisions, and you can nest loops inside loops.
 
 # Write your code below:
-
+friend1 = input("please enter the name of friend1: ")
+friend2 = input("please enter the name of friend2: ")
+friend3 = input("please enter the name of friend3: ")
+friends = [friend1, friend2, friend3]
+for name in friends:
+    print("Hello " + name)
 
 # -------------------------------------------
 # Submitting Your Work
