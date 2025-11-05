@@ -34,9 +34,9 @@ print("-------------------------------------------\n"
 #     print("Hello " + name)  # loop through and greet
 
 # Write your code below:
-friend1 = input("please enter the name of friend1")
-friend2 = input("please enter the name of friend2")
-friend3 = input("please enter the name of friend3")
+friend1 = input("please enter the name of friend1: ")
+friend2 = input("please enter the name of friend2: ")
+friend3 = input("please enter the name of friend3: ")
 friends = [friend1, friend2, friend3]
 for name in friends:
     print("Hello " + name)
@@ -77,7 +77,7 @@ print("-------------------------------------------\n"
 # Write your code below:
 value=0
 while value<1 or value>10:
-    value=int(input("Enter a value "))
+    value=int(input("Enter a value: "))
     if (value<1):
         print("value is too low (<1)")
     elif (value>10):
@@ -153,7 +153,7 @@ print("-------------------------------------------\n"
 #     answer = input("Try again: ")
 
 # Write your code below:
-answer = input("Enter someething: ")
+answer = input("Enter something: ")
 while answer == "":
     answer = input("Answer is empty try again: ")
 
@@ -251,7 +251,12 @@ print("-------------------------------------------\n"
 # Hint: combine loops and decisions, and you can nest loops inside loops.
 
 # Write your code below:
-
+friend1 = input("please enter the name of friend1: ")
+friend2 = input("please enter the name of friend2: ")
+friend3 = input("please enter the name of friend3: ")
+friends = [friend1, friend2, friend3]
+for name in friends:
+    print("Hello " + name)
 
 # -------------------------------------------
 # Submitting Your Work
